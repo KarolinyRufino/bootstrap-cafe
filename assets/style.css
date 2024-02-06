@@ -1,0 +1,43 @@
+:root{
+    --bs-link-color: #198754;
+    --bs-link-hover-color: #146c43
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btn{
+    --bs-btn-bg: #198754;
+    --bs-btn-border-color: #146c43;
+    --bs-btn-hover-bg: #146c43;
+    --bs-btn-hover-border-color: #146c43;
+    --bs-btn-active-bg: #0c5835;
+}
+main{
+    margin-top: 5rem;
+}
+section{
+    scroll-margin-top: 6rem;
+}
+/* tamanho do carrossel */
+.carousel-item{
+    height: 500px;
+}
+.carousel-item img{
+    height: 100%;
+    object-fit: cover; /* a imagem vai respeitar o tamanho do height sem cortar */
+    object-position: center;
+}
+.carousel-item::before{
+    /* criando um degradê dentro da imagem */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgb(31, 31, 31)) ;
+    position: absolute;
+}
+.card-menu img{
+    height: 300px;
+    object-fit: cover;
+}
